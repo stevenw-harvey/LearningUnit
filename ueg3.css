@@ -1,0 +1,387 @@
+/* still needs clealning up anything affected by my swapping order code seems to have shrunk havent fixed yet...*/
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,dl,dd,ol,ul,form,fieldset,legend,figure,table,th,td,caption,hr {
+    margin:0;
+    padding:0;
+   }
+
+   article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+    display:block
+   }
+
+/* root  STYLES this is what is being referenced by REM measurement */
+
+html {
+    font-size: 1em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+/* LEARNING UNIT STYLES */
+
+.main_container {
+    margin: 0 auto;
+    color: #808080;
+    line-height: 1.9;
+    padding: 40px 0;
+    max-width: 750px;
+    }
+
+/* consistant margin bottom */
+.main_container h1,.main_container h2,.main_container h3,.main_container h4,.main_container h5,.main_container h6,.main_container hgroup,
+.main_container ul,.main_container ol,.main_container dd,.main_container section
+,.main_container p,.main_container .blurb p,.main_container .authors p,.main_container figure,  
+.main_container figure.caption, .main_container body
+pre,.main_container table,fieldset,.main_container hr, .main_container .heading,.main_container .authors, .main_container .blurb {
+    margin-bottom:1.5rem ;
+}
+
+/* text styles */
+
+
+/* ---------------------- */
+
+.main_container h1 {
+    font-weight: 300;
+    color: #37474f;
+    font-size: 2.25rem;
+    line-height: 1.5;
+}
+
+.main_container h2 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: #039be5;
+    line-height: 1.3;
+}
+
+.main_container h3 {
+    font-weight: 600;
+    color: #484848;
+}
+
+.main_container .objectives,
+.main_container .example {
+    border-left: 3px solid #039be5;
+    background-color: #dcf6ff;
+    line-height: 1.9;
+    margin-bottom: 2.2rem;
+    padding: 1.5rem;
+}
+
+
+/* interactive segment */
+
+
+/* ---------------------- */
+
+.main_container .interactive {
+    border-left: 3px solid #f6b73c;
+    background-color: #fff3d4;
+    margin-bottom: 2.2rem; 
+    padding-top:1.9rem;
+    padding-left: 1.9rem; 
+    border: 1px red dotted;
+}
+
+
+
+
+.interactive ol.number_list li::before, .interactive ol.lc_abc li::before {
+    color: #808080;
+}
+
+.front, .back {
+   
+   border: 1px green solid
+}
+/* img vid container section */
+
+
+/* ---------------------- */
+
+.container {
+    display: block;
+    max-width: 650px;
+}
+
+.main_container img, .main_container .vid {
+    border: 1px solid#78909c;
+    height: auto;
+    width: 100%;
+}
+
+
+/* SALESFORCE OVERRIDES */
+
+div.slds-page-header__title {
+    display: none;
+}
+
+.slds-page-header {
+    background-color: white;
+    border-bottom: none;
+}
+
+#main-container,
+#page,
+body {
+    background-color: #FCFCFC;
+}
+
+
+/* LEARNING UNIT STYLES */
+
+.main_container p {
+    font-size: 1rem;
+    color: #808080;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.main_container .main_heading p {
+    line-height: 1.5;
+    font-size: 3rem;
+    color: #484848;
+    max-width: 750px;
+}
+
+.main_container .authors p {
+    font-size: 1.10rem;
+    color: #039be5;
+}
+
+.main_container .blurb {
+    font-size: 1em;
+
+}
+
+.main_container .blurb p {
+    color: #808080;
+    font-weight: lighter;
+}
+
+.main_container a{
+
+    color: #039be5;
+
+}
+
+/* figure & video inserts */
+/* ---------------------- */
+
+.main_container figure {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    color: #78909c;
+}
+
+div.seperator {
+    height: 3px;
+    background-color: #ffc600;
+    width: 60px;
+}
+
+.main_container figure.title {
+    font-weight: bold;
+    font-size: 1.125em;
+    color: #039be5;
+    margin-bottom: 0.3rem;
+}
+
+.main_container img {
+    border: 1px solid#78909c;
+    height: auto;
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+.main_container figure.caption {
+    padding-bottom: 1rem;
+    border-bottom: solid 1px #78909c;
+    color: #78909c;
+    font-size: 0.875rem;
+}
+
+figure.ref {
+    color: #78909c;
+}
+
+.main_container video {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+.main_container source {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Author section */
+/* ---------------------- */
+
+.author_section img {
+    width: 95px;
+    height: 95px;
+    display: table-cell;
+}
+
+.author_section p {
+    vertical-align: top;
+    padding-right: 20px;
+}
+
+
+/* List styling */
+/* ---------------------- */
+
+.main_container ol,
+.main_container ul {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main_container li {
+    color: #808080;
+    line-height: 2;
+    margin-bottom: 1rem;
+    content: none;
+    list-style: none;
+}
+
+ol {
+    counter-reset: listStyle;
+    list-style: none;
+}
+
+ol.number_list li:before {
+    counter-increment: listStyle;
+    content: counter(listStyle)". ";
+    position: relative;
+    display: inline-block;
+    max-width: 0px;
+    max-height: 0px;
+    left: -1.3em;
+    color: #039be5;
+    font-weight: bold;
+}
+
+ol ol li:before {
+    color: #808080;
+}
+
+.main_container li {
+    color: #808080;
+    line-height: 2;
+    margin-bottom: 1rem;
+    padding-left: 2em;
+    
+}
+
+.main_container ul,
+.main_container ol {
+    padding-right: 1.1225em;
+}
+
+.main_container ol li {
+    list-style-type: none;
+    counter-increment: count-me;
+}
+
+ol.lc_abc li::before {
+    counter-increment: listStyle;
+    content: counter(listStyle, lower-alpha)". ";
+    position: relative;
+    display: inline-block;
+    max-width: 0px;
+    max-height: 0px;
+    left: -1.3em;
+    font-weight: bold;
+    color: #039be5;
+}
+
+ol.uc_abc li::before {
+    counter-increment: listStyle;
+    content: counter(listStyle, upper-alpha)". ";
+    position: relative;
+    display: inline-block;
+    max-width: 0px;
+    max-height: 0px;
+    left: -1.3em;
+    color: #039be5;
+    font-weight: bold;
+}
+
+
+/*nested lists class*/
+
+.main_container ul li::before,
+.main_container ul ul li::before,
+.main_container ol ul li::before {
+    color: #808080;
+    content: "\2022" " ";
+    counter-increment: listStyle;
+    position: relative;
+    display: inline-block;
+    max-width: 0px;
+    max-height: 0px;
+    left: -1.3em;
+    font-weight: bold;
+
+}
+
+
+.main_container ol.number_list ol.number_list li::before {
+
+    color: #78909c;
+
+}
+
+/* miscellaneous others */
+
+
+/* ---------------------- 
+.main_container .equation {
+   margin-left:70px;
+}
+
+.main_container .equation p{
+    font-size: 1.1em;
+ }*/
+
+.main_container table {
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* swap order */
+
+.container {
+    display: inline-block;
+    display: table;
+}
+
+figure.title {
+    display: table-caption;
+}
+
+figure.caption {
+    display: table-header-group;
+}
+
+.container ueg {
+    border: 1px solid#78909c;
+    width: 100%;
+    display: table-footer-group;
+}
