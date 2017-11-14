@@ -321,6 +321,18 @@ ol.uc_abc li::before {
     font-weight: bold;
 }
 
+ol.roman_list li::before {
+    counter-increment: listStyle;
+    content: counter(listStyle, lower-roman)". ";
+    position: relative;
+    display: inline-block;
+    max-width: 0px;
+    max-height: 0px;
+    left: -1.3em;
+    color: #039be5;
+    font-weight: bold;
+}
+
 
 /*nested lists class*/
 
